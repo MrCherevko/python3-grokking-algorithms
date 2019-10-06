@@ -1,6 +1,6 @@
 
 
-def find_smallest(arr):
+def find_smallest(arr) -> int:
     smallest = arr[0]
     smallest_index = 0
     for i in range(1, len(arr)):
@@ -10,7 +10,7 @@ def find_smallest(arr):
     return smallest_index
 
 
-def selection_sort(not_sorted_array, sort_function):
+def selection_sort(not_sorted_array: list, sort_function: classmethod) -> list:
     sorted_array = []
     for i in range(len(not_sorted_array)):
         smallest = sort_function(not_sorted_array)
